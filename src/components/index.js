@@ -1,29 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
+// import axios from 'axios';
 
-function Index() {
-  return (
-    <React.Fragment>
-      <table>
-        <tr>
-          <th>ID</th>
-          <th>Title</th>
-          <th>Boby</th>
-        </tr>
-        <tr>
-          <td>
-            test1
-          </td>
-          <td>
-            test2
-          </td>
-          <td>
-            test3
-          </td>
-        </tr>
-      </table>
 
-    </React.Fragment>
-  );
+class Index extends Component {
+
+  render() {
+    return (
+      <React.Fragment>
+        <h1 className="header">GitHub Repositories</h1>
+
+        <ul>
+          <li>
+            <a href="#">RepositoryName1</a>
+          </li>
+          <li>
+            <a href="#">RepositoryName2</a>
+          </li>
+          <li>
+            <a href="#">RepositoryName3</a>
+          </li>
+        </ul>
+
+      </React.Fragment>
+    );
+  }
 }
 
 export default Index;
